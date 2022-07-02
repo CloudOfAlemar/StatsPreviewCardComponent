@@ -1,0 +1,227 @@
+
+/* ======================================== */
+/* Group Styles */
+/* ======================================== */
+
+/* Margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+/* Overflow */
+html,
+body {
+  overflow: auto;
+}
+
+/* Display */
+.component-image,
+.stat-quantity {
+  display: block;
+}
+
+/* Color */
+.intro-heading,
+.stat-quantity {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Text Align */
+.intro-heading,
+.intro-paragraph,
+.stat-details {
+  text-align: center;
+}
+
+/* Line Height */
+.intro-paragraph,
+.stat-quantity {
+  line-height: 1.5;
+}
+
+/* Font Size */
+.intro-paragraph,
+.stat-heading {
+  font-size: 1.5rem;
+}
+
+/* Box Sizing */
+.main-area,
+.content-area {
+  box-sizing: border-box;
+}
+
+/* ======================================== */
+/* Individual Styles */
+/* ======================================== */
+
+html {
+  font-size: .625rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Main Area ===== */
+.main-area {
+  background-color: hsl(233, 47%, 7%);
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card-component {
+  background-color: hsl(244, 38%, 16%);
+  max-width: 375px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ===== Image Area ===== */
+.image-area {
+  position: relative;
+}
+
+.image-area::after {
+  background-color: hsla(277, 64%, 61%,.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.component-image {
+  width: 100%;
+}
+
+/* ===== Content Area ===== */
+.content-area {
+  padding: 40px 20px;
+}
+
+/* Intro Area */
+.intro-area {
+  max-width: 260px;
+  margin: 0 auto 50px;
+}
+
+.intro-heading {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.intro-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* Stats Area */
+.stat-details {
+  margin-bottom: 20px;
+}
+
+.stat-quantity {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ======================================== */
+/* Media Queries */
+/* ======================================== */
+
+@media (min-width: 1024px) {
+  /* ======================================== */
+  /* Group Styles */
+  /* ======================================== */
+  
+  /* Width */
+  .image-area,
+  .content-area {
+    width: 50%;
+  }
+
+  /* Text Align */
+  .intro-heading,
+  .intro-paragraph,
+  .stat-details {
+    text-align: left;
+  }
+
+  /* Display */
+  .stat-card-component,
+  .content-area,
+  .stats-area {
+    display: flex;
+  }
+
+  /* ======================================== */
+  /* Individual Styles */
+  /* ======================================== */
+
+  /* ===== Main Area ===== */
+  .stat-card-component {
+    max-width: none;
+  }
+
+  /* ===== Image Area ===== */
+  .image-area {
+    order: 1;
+  }
+
+  /* ===== Content Area ===== */
+  .content-area {
+    align-items: center;
+  }
+
+  .content-control {
+    align-items: center;
+    max-width: 350px;
+    padding: 0 0 0 50px;
+  }
+
+  /* Intro Area */
+  .intro-area {
+    max-width: none;
+    margin-bottom: 60px;
+  }
+
+  .intro-heading {
+    font-size: 3rem;
+  }
+
+  /* Stats Area */
+  .stat-details {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  /* ======================================== */
+  /* Helper Classes */
+  /* ======================================== */
+  .margin-right-0 {
+    margin-right: 0;
+  }
+
+}
+
+/* ======================================== */
+/* Helper Classes */
+/* ======================================== */
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.pop-color {
+  color: hsl(277, 64%, 61%);
+}
